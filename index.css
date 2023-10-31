@@ -3,12 +3,15 @@
     flex-direction: row;
 }
 
+h1 {
+    margin: 0;
+}
+
 #terrain {
     position: relative;
     height: 90vh;
-    width: 100%;
-    border: 1px solid black;
-    background-image: url("./images/stade.png");
+    width: 50vw;
+    background-image: url("./images/stade2.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
@@ -23,21 +26,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50px;
-    width: 50px;
+    height: 2.5em;
+    width: 2.5em;
     border-radius: 50%;
     background-color: transparent;
     background-image: url("./images/icone.png");
     background-size: cover;
 }
 
+
 #banc {
-    height: 55vh;
-    width: 100%;
-    border: 1px solid black;
-    background-image: url("./images/banc.jpg");
-    background-size: auto;
+    text-align: center;
+    font-family: 'Tourney', 'Courier New', Courier, monospace;
+    color: white;
+    height: 45vh;
+    width: 50vw;
+    background-image: url("./images/gazon.png");
+    background-size: cover;
     background-repeat: no-repeat;
+    margin: 0;
+    border-bottom: 4px solid white;
+}
+
+#absents {
+    text-align: center;
+    font-family: 'Tourney', 'Courier New', Courier, monospace;
+    color: white;
+    height: 45vh;
+    width: 100%;
+    background-image: url("./images/gazon.png");
+    background-size: cover;
 }
 
 .name {

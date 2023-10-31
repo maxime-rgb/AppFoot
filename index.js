@@ -1,6 +1,13 @@
 let joueurs = document.querySelectorAll('.joueur');
 let offset = { x: 0, y: 0 };
 
+window.onload = function () {
+    let joueurs = document.querySelectorAll('.joueur');
+    joueurs.forEach((joueur) => {
+        joueur.classList.add('start-position');
+    });
+};
+
 // Charger les positions des joueurs à partir du localStorage
 joueurs.forEach((joueur) => {
     let pos = localStorage.getItem(joueur.id);
